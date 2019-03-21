@@ -1,1 +1,150 @@
-# cheshen
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="./images/111.ico" type="image/x-icon"/>
+	<title>小橘子</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		a,
+		img {
+			border: 0;
+		}
+
+		body {
+			font: 12px/180% Tahoma, Geneva, sans-serif;
+		}
+
+		/* Carousel */
+
+		#carousel1 {
+			width: 960px;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			margin: 0 auto;
+		}
+
+		#carousel1 img {
+			border: none;
+			width: 240px;
+			height: 180px;
+			border: solid 1px #000;
+		}
+
+		#carousel1 #title-text {
+			font-size: 22px;
+			margin: 10px 20px 0 0;
+			padding: 0;
+			text-align: right;
+		}
+
+		#carousel1 #alt-text {
+			font-size: 14px;
+			margin: 5px 20px 0 0;
+			padding: 0;
+			text-align: right;
+		}
+
+		#carousel1 #user-c {
+			padding: 0;
+			position: absolute;
+			right: 15px;
+			bottom: 10px;
+		}
+
+		#carousel1 .carouselLeft,
+		#carousel1 .carouselRight {
+			position: absolute;
+			bottom: 20px;
+			width: 29px;
+			height: 30px;
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		#carousel1 .carouselLeft {
+			
+			right: 60px;
+			background: url(images/templatemo_slider_right.png) no-repeat;
+		}
+
+		#carousel1 .carouselRight {
+			right: 808px;
+			background: url(images/templatemo_slider_left.png) no-repeat;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/JavaScript" src="js/CloudCarousel.1.0.5.js"></script>
+	<script type="text/JavaScript" src="js/jquery.mousewheel.js"></script>
+	<!--鼠标滚动插件-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// 这初始化容器中指定的元素，在这种情况下，旋转木马.
+			$("#carousel1").CloudCarousel({
+				xPos: 450,
+				yPos: 110,
+				buttonLeft: $('#but1'),
+				buttonRight: $('#but2'),
+				altBox: $("#alt-text"),
+				titleBox: $("#title-text"),
+				FPS: 30,
+				reflHeight: 86,
+				reflGap: 2,
+				yRadius: 40,
+				autoRotateDelay: 1200,
+				speed: 0.2,
+				mouseWheel: true,
+				bringToFront: true
+				
+			});
+		});
+	</script>
+</head>
+
+<body style="background-color: gray;font-family: '微软雅黑';padding-top:30px;">
+	<h1 style="text-align: center;
+	color: skyblue;
+	font-size: 28px;">小橘子官网上线了</h1>
+	<div id="carousel1">
+		<p id="title-text"></p>
+		<p id="alt-text"></p>
+		<a target="_parent">
+			<img class="cloudcarousel" src="images/q1.jpg" />
+		</a>
+		<a target="_parent">
+			<img class="cloudcarousel" src="images/q2.jpg" />
+		</a>
+		<a target="_parent">
+			<img class="cloudcarousel" src="images/q3.jpg" />
+		</a>
+		<a target="_parent">
+			<img class="cloudcarousel" src="images/q4.jpg" />
+		</a>
+		<a target="_parent">
+			<img class="cloudcarousel" src="images/05.jpg" />
+		</a>
+		<a target="_parent">
+			<img class="cloudcarousel" src="images/06.jpg" />
+		</a>
+		<a target="_parent">
+			<img class="cloudcarousel" src="images/07.jpg" />
+		</a>
+		<a target="_parent">
+			<img class="cloudcarousel" src="images/08.jpg" />
+		</a>
+		<div id="but1" class="carouselLeft"></div>
+		<div id="but2" class="carouselRight"></div>
+	</div>
+	<!--carousel1 end-->
+	<br>
+
+</body>
+
+</html>
