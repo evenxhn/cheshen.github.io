@@ -8,17 +8,35 @@
     <style>
         body{
             background-color: skyblue;
+            text-align: center;
+            font-size: 44px;
+            font-family: fantasy;
+            color: red;
+            font-weight: 700;
+        }
+        span{
+            color: beige;
         }
     </style>
 </head>
-<body>
-    <script>
-     var myDate = new Date();
-     var time=myDate.toLocaleString( ); 
-     alert("Hi,大家好，我是郭子凡的熊");
-    
-
-     alert("现在时间为"+time);
-    </script>
+<body style="background-color: skyblue;">
+    <div id="nh"></div> 
+ 
 </body>
+<script>
+    var nh=document.getElementById("nh");
+    var a=100;
+        var myDate = new Date();
+        var time=myDate.toLocaleString( ); 
+        alert("Hi,大家好，我是郭子凡的熊");
+        alert("现在时间为"+time);
+     setInterval(function(){
+        a--;
+        if(a==0){
+            a=99;
+        }
+        nh.innerHTML="<span>您的剩余时间还有"+"</span>"+a+"<span>秒"+"</span>";
+    },1000)
+   
+       </script>
 </html>
